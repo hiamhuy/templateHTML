@@ -24,6 +24,7 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 		<link href="blog.css" rel="stylesheet" />
 		<link href="reponsive.css" rel="stylesheet" />
 	</head>
@@ -177,15 +178,52 @@
 			<header>
 				<div class="header-main">
 					<div class="background-header">
-						<div class="background-info">
-							<p class="text text-info">Thông tin</p>
-							<p class="text text-nameComp">Công ty công nghệ Hachitech Solution</p>
-							<p class="text text-infoComp">
-								Chúng tôi là công ty chuyên gia công nghệ hàng đầu cung cấp các dịch vụ Phần mềm/<br />
-								Phát triển website/Outsource cao cấp ưu hóa các giải pháp quảng cáo đa nền tảng.
-							</p>
-							<div class="button-shownow">
-								<a href="#">Xem ngay</a>
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="bg-info">
+										<div class="thumb-bg object-cover">
+											<img src="./assets/background-blog.png" alt="" />
+										</div>
+										<div class="text-bg">
+											<p class="text text-content text-info">Thông tin</p>
+											<p class="text text-content text-nameComp">
+												Công ty công nghệ Hachitech Solution
+											</p>
+											<p class="text text-content text-infoComp">
+												Chúng tôi là công ty chuyên gia công nghệ hàng đầu cung cấp các dịch vụ
+												Phần mềm/<br />
+												Phát triển website/Outsource cao cấp ưu hóa các giải pháp quảng cáo đa
+												nền tảng.
+											</p>
+											<div class="button-shownow">
+												<a href="#">Xem ngay</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="bg-info">
+										<div class="thumb-bg object-cover">
+											<img src="./assets/backgroundbanner2.png" alt="" />
+										</div>
+										<div class="text-bg">
+											<p class="text text-content text-info">Thông tin</p>
+											<p class="text text-content text-nameComp">
+												Công ty công nghệ Hachitech Solution
+											</p>
+											<p class="text text-content text-infoComp">
+												Chúng tôi là công ty chuyên gia công nghệ hàng đầu cung cấp các dịch vụ
+												Phần mềm/<br />
+												Phát triển website/Outsource cao cấp ưu hóa các giải pháp quảng cáo đa
+												nền tảng.
+											</p>
+											<div class="button-shownow">
+												<a href="#">Xem ngay</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -608,17 +646,17 @@
 						</div>
 					</div>
 					<div class="pagination container">
-						<ul>
-							<li class="page-item">
-								<a href="#"><i class="fa-solid fa-angle-left"></i></a>
+						<ul class="listPage">
+							<li>
+								<a><i class="fa-solid fa-angle-left"></i></a>
 							</li>
-							<li class="page-item active-page"><a href="#">1</a></li>
-							<li class="page-item"><a href="#">2</a></li>
-							<li class="page-item"><a href="#">3</a></li>
-							<li class="page-item"><a href="#">4</a></li>
-							<li class="page-item"><a href="#">5</a></li>
-							<li class="page-item">
-								<a href="#"><i class="fa-solid fa-angle-right"></i></a>
+							<li class="active-page">1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>
+								<a><i class="fa-solid fa-angle-right"></i></a>
 							</li>
 						</ul>
 					</div>
@@ -910,6 +948,7 @@
 			</footer>
 			<div class="overlay desktop-hide"></div>
 		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 		<script src="blog.js"></script>
 	</body>
 </html>

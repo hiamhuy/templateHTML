@@ -26,3 +26,11 @@ function activeTabs(e) {
 	if (this.closest(".tab").classList != "active");
 	this.closest(".tab").classList.toggle("active");
 }
+
+//slider
+const swiper = new Swiper(".swiper", {
+	loop: true,
+	autoplay: {
+		delay: 3000,
+	},
+});

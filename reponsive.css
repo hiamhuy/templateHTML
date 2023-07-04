@@ -9,13 +9,24 @@
 		padding: 10px !important;
 	}
 }
+@media screen and (max-width: 380px) {
+	.header-main .bg-info p.text-info {
+		font-size: 15px !important;
+	}
+	.header-main .bg-info p.text-nameComp {
+		font-size: 25px !important;
+	}
+	.header-main .bg-info p.text-infoComp {
+		font-size: 10px !important;
+	}
+}
 @media screen and (max-width: 639px) {
 	.nav_top .logo svg {
 		width: 150px;
 		height: 50px;
 	}
-	.header-main .background-header .background-info {
-		transform: translateY(20%);
+	.header-main .bg-info .text-bg {
+		transform: translateY(25%) !important;
 	}
 }
 @media screen and (max-width: 768px) {
@@ -32,6 +43,9 @@
 		padding: 20px 0px 0px 50px;
 		border-left: 0;
 		border-top: 1px solid rgba(200, 200, 200, 1);
+	}
+	.header-main .bg-info .text-bg {
+		transform: translateY(40%);
 	}
 }
 @media screen and (min-width: 768px) {
@@ -50,19 +64,19 @@
 	.container {
 		padding: 0 30px;
 	}
-	.header-main .background-header .background-info p.text-info {
+	.header-main .bg-info p.text-info {
 		font-family: "SVN-Gilrory", sans-serif;
 		font-weight: var(--fw5);
 		font-size: 30px;
 		line-height: 50px;
 	}
-	.header-main .background-header .background-info p.text-nameComp {
+	.header-main .bg-info p.text-nameComp {
 		font-family: "SVN-Gilrory", sans-serif;
 		font-weight: var(--fw7);
 		font-size: 40px;
 		line-height: 60px;
 	}
-	.header-main .background-header .background-info p.text-infoComp {
+	.header-main .bg-info p.text-infoComp {
 		font-family: "SVN-Gilrory", sans-serif;
 		font-weight: var(--fw6);
 		font-size: 14px;
@@ -102,7 +116,7 @@
 	.pagination {
 		top: 500px;
 	}
-	.pagination ul .page-item {
+	.pagination .listPage li {
 		width: 30px;
 		height: 30px;
 	}
@@ -136,19 +150,19 @@
 		display: block;
 	}
 
-	.header-main .background-header .background-info p.text-info {
+	.header-main .background-header .bg-info p.text-info {
 		font-family: "SVN-Gilrory", sans-serif;
 		font-weight: var(--fw5);
 		font-size: 40px;
 		line-height: 60px;
 	}
-	.header-main .background-header .background-info p.text-nameComp {
+	.header-main .background-header .bg-info p.text-nameComp {
 		font-family: "SVN-Gilrory", sans-serif;
 		font-weight: var(--fw7);
 		font-size: 50px;
 		line-height: 70px;
 	}
-	.header-main .background-header .background-info p.text-infoComp {
+	.header-main .background-header .bg-info p.text-infoComp {
 		font-family: "SVN-Gilrory", sans-serif;
 		font-weight: var(--fw6);
 		font-size: 14px;
