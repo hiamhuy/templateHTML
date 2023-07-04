@@ -524,6 +524,7 @@ aside.active {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	padding-bottom: 80px;
 }
 .footer-info .info ul li {
 	display: flex;
@@ -550,4 +551,157 @@ aside.active {
 	color: var(--color-background);
 	font-weight: var(--fw4);
 	font-size: 13px;
+}
+.footer-banner {
+	position: relative;
+	top: 600px;
+}
+.footer-banner .banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+}
+.footer-banner .banner h2 {
+	color: var(--color-button);
+	font-size: 35px;
+	line-height: 60px;
+}
+.footer-banner .banner .text-banner {
+	color: var(--color-font);
+	font-weight: var(--fw6);
+	font-size: 16px;
+	line-height: 25px;
+}
+.form-contact {
+	position: relative;
+	top: 700px;
+	z-index: 98;
+}
+.form-contact form {
+	display: grid;
+	background-color: var(--color-background);
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(2, 100%);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 1);
+	box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.25);
+}
+.form-contact form .contact {
+	display: flex;
+	flex-direction: column;
+	padding: 40px 120px 40px 40px;
+}
+.form-contact form .contact .pb-2 {
+	padding-bottom: 20px;
+}
+.form-contact form .contact span i {
+	padding-right: 10px;
+}
+.form-contact form .contact span.c-text {
+	color: var(--color-font);
+	font-weight: var(--fw5);
+}
+
+.form-contact form .form {
+	padding: 10px 0px 0px 50px;
+	border-left: 1px solid rgba(200, 200, 200, 1);
+}
+.form-contact form .form-input {
+	margin-bottom: 25px;
+}
+.form-contact form .form-input label {
+	color: var(--color-font);
+	font-weight: var(--fw5);
+	padding: 0px 1px 0px 0px;
+	position: relative;
+	font-size: 16px;
+	transition: all 0.3s ease;
+	pointer-events: none;
+}
+.form-contact form .form-input label::after {
+	content: ":";
+}
+.form-contact form .form-input .label .placeholder {
+	color: #ccc;
+	font-weight: var(--fw4);
+	font-size: 14px;
+	transition: all 0.3s ease;
+	pointer-events: none;
+}
+.form-contact form .form-input input {
+	padding: 10px 20px;
+	width: 90%;
+	font-size: 16px;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	background-color: transparent;
+	outline: none;
+}
+
+.form-contact form button[type="submit"] {
+	border: 0;
+	background-color: var(--color-button);
+	color: var(--color-background);
+	border-radius: 50px;
+	padding: 10px 40px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.3s ease-in-out;
+	margin-bottom: 20px;
+}
+.form-contact form button[type="submit"]:hover {
+	background-color: var(--color-background);
+	color: var(--color-button);
+	border: 2px solid var(--color-button);
+}
+.footer-logo {
+	position: relative;
+	background-color: #1a1919;
+	top: 620px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 500px;
+	width: 100%;
+}
+.footer-logo .logo {
+	position: relative;
+	top: 100px;
+}
+.footer-logo .logo svg {
+	width: 120px;
+}
+.footer-logo .social-network {
+	position: relative;
+	top: 80px;
+	padding: 50px 0px;
+}
+.footer-logo .social-network span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-logo .social-network .icon ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.footer-logo .social-network .icon ul li {
+	padding: 10px;
+}
+.footer-logo .social-network .icon ul li a svg {
+	width: 20px;
+}
+.footer-logo .social-network span.text {
+	font-size: 15px;
+}
+.footer-logo .social-network span.text-align {
+	text-align: center;
+}
+.footer-logo .social-network span.coppyright {
+	margin-top: 50px;
 }
