@@ -52,8 +52,8 @@ a {
 .object-cover img {
 	position: absolute;
 	object-fit: cover;
-	width: var(--percent100);
-	height: var(--percent100);
+	width: 100%;
+	height: 100%;
 	display: block;
 }
 .flexwrap {
@@ -103,7 +103,7 @@ a {
 }
 .header-main .text-content {
 	position: relative;
-	height: var(--percent100);
+	height: 100%;
 }
 .header-main .bg-info .text-bg {
 	position: relative;
@@ -133,7 +133,32 @@ a {
 	color: var(--color-background);
 	transition: all 0.2s ease-in-out;
 }
-
+.header-main .bg-info .position-text {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	transform: translate(150px, 120px);
+	position: relative;
+	z-index: 1;
+}
+.header-main .bg-info .position-text .tx-title {
+	font-size: 30px;
+	font-weight: var(--fw7);
+	line-height: 50px;
+}
+.header-main .bg-info .position-text .tx-content {
+	font-size: 15px;
+	font-weight: var(--fw5);
+	line-height: 25px;
+	color: rgba(255, 255, 255, 1);
+}
+.header-main .bg-info .btn-readmore {
+	margin-top: 20px;
+}
+.header-main .bg-info .color-btn a {
+	border: 1px solid var(--color-background);
+	color: var(--color-background);
+}
 .toggle {
 	cursor: pointer;
 	display: flex;
@@ -307,6 +332,7 @@ aside.active {
 	transition: color 0.2s ease-in-out;
 }
 .btn-readmore a:hover {
+	border: 1px solid rgba(185, 30, 30, 1) !important;
 	background-color: rgba(185, 30, 30, 1);
 	color: var(--color-background);
 }
