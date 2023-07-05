@@ -36,6 +36,11 @@
 		margin-right: 5px;
 	}
 }
+@media screen and (max-width: 480px) {
+	.box-comment .comment .rates {
+		flex-direction: column;
+	}
+}
 @media screen and (max-width: 639px) {
 	.nav_top .logo svg {
 		width: 150px;
@@ -43,6 +48,17 @@
 	}
 	.header-main .bg-info .text-bg {
 		transform: translateY(25%) !important;
+	}
+
+	/* ========================= */
+	/* Product us */
+	.header-title h1 {
+		font-size: 35px;
+		line-height: unset;
+	}
+	.header-title .box-search {
+		width: 100%;
+		height: 50px;
 	}
 }
 @media screen and (max-width: 768px) {
