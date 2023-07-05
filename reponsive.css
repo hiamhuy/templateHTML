@@ -1,12 +1,12 @@
 @media screen and (max-width: 340px) {
-	.pagination {
-		top: 600px !important;
-	}
 	.footer-info {
 		top: 650px !important;
 	}
 	.form-contact form .contact {
 		padding: 10px !important;
+	}
+	.gridview {
+		padding: 0px 0px 6em 0px;
 	}
 }
 @media screen and (max-width: 380px) {
@@ -26,6 +26,14 @@
 	.header-main .bg-info .position-text .tx-content {
 		font-size: 10px;
 		word-wrap: break-word;
+	}
+	.content-detail .content .interacts ul li {
+		width: 50px;
+		height: 25px;
+	}
+	.content-detail .content .interacts ul li i {
+		font-size: 15px;
+		margin-right: 5px;
 	}
 }
 @media screen and (max-width: 639px) {
@@ -58,6 +66,9 @@
 	.header-main .bg-info .position-text {
 		width: 80%;
 		transform: translate(10px, 120px);
+	}
+	.pagination .wrapper {
+		padding: 10em 0px 0px 0px !important;
 	}
 }
 @media screen and (min-width: 768px) {
@@ -109,7 +120,7 @@
 		margin-top: 20px;
 		margin-bottom: 10px;
 	}
-	.banners-company .banner {
+	.banners-company .banner-comp {
 		display: flex;
 		flex-direction: column;
 	}
@@ -124,17 +135,14 @@
 	.gridview .gird-items .grid .item .foot-grid {
 		transform: translateY(0) !important;
 	}
-
-	.pagination {
-		top: 500px;
+	.pagination .wrapper {
+		padding: 8em 0px 0px 0px;
 	}
 	.pagination .listPage li {
 		width: 30px;
 		height: 30px;
 	}
-	.footer-info {
-		top: 600px;
-	}
+
 	.footer-info .info ul {
 		flex-direction: column;
 	}
@@ -193,7 +201,7 @@
 		bottom: 30px;
 	}
 	.banners {
-		padding: 0 100px;
+		padding: 0 205px;
 	}
 	/* .cards .items .item {
 		flex: 0 0 25%;
@@ -202,7 +210,7 @@
 		margin-top: 20px;
 		margin-bottom: 10px;
 	}
-	.banners-company .banner {
+	.banners-company .banner-comp {
 		display: flex;
 		flex-direction: row;
 	}
@@ -214,10 +222,5 @@
 	.footer-info .info ul li::before {
 		top: unset;
 		margin-top: 8px;
-	}
-}
-@media screen and (min-width: 1378px) {
-	.container {
-		padding: 0 255px;
 	}
 }
