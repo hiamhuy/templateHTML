@@ -365,12 +365,12 @@ aside.active {
 }
 
 .items {
-	justify-content: center;
-	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0px 20px;
 }
 .items .item {
-	flex-direction: column;
-	flex: 0 0 100%;
+	width: 100%;
 	border-radius: 6px;
 	margin-bottom: 50px;
 	height: 550px;

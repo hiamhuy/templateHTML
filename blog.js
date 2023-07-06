@@ -24,7 +24,7 @@ function activeTabs(e) {
 		item != this ? item.closest(".tab").classList.remove("active") : null;
 	});
 	if (this.closest(".tab").classList != "active");
-	this.closest(".tab").classList.toggle("active");
+	this.closest(".tab").classList.add("active");
 }
 
 //slider

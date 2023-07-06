@@ -42,6 +42,9 @@
 	}
 }
 @media screen and (max-width: 639px) {
+	.items {
+		grid-template-columns: 1fr !important;
+	}
 	.nav_top .logo svg {
 		width: 150px;
 		height: 50px;
@@ -62,6 +65,9 @@
 	}
 }
 @media screen and (max-width: 768px) {
+	.items {
+		grid-template-columns: repeat(2, 1fr);
+	}
 	.form-contact form {
 		grid-template-columns: 100% !important;
 		grid-template-rows: repeat(2, 50%) !important;
@@ -83,7 +89,7 @@
 		width: 80%;
 		transform: translate(10px, 120px);
 	}
-	.pagination .wrapper {
+	#page-blog .pagination .wrapper {
 		padding: 10em 0px 0px 0px !important;
 	}
 
@@ -120,9 +126,6 @@
 @media screen and (min-width: 768px) {
 	.container {
 		padding: 0 30px;
-	}
-	.cards .items .item {
-		flex: 0 0 31%;
 	}
 	.cards .items .item .btn-readmore {
 		margin-top: 20px;
@@ -183,7 +186,7 @@
 	.gridview .gird-items .grid .item .foot-grid {
 		transform: translateY(0) !important;
 	}
-	.pagination .wrapper {
+	#page-blog .pagination .wrapper {
 		padding: 8em 0px 0px 0px;
 	}
 	.pagination .listPage li {
