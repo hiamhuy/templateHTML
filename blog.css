@@ -66,6 +66,12 @@ a {
 	flex-direction: column;
 	gap: 1em;
 }
+.flexend {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	text-align: end;
+}
 .text-hide {
 	display: block;
 	display: -webkit-box;
@@ -657,7 +663,7 @@ aside.active {
 }
 
 .form-contact form button[type="submit"] {
-	border: 0;
+	border: 2px solid var(--color-button);
 	background-color: var(--color-button);
 	color: var(--color-background);
 	border-radius: 50px;
@@ -668,7 +674,7 @@ aside.active {
 	margin-bottom: 20px;
 }
 .form-contact form button[type="submit"]:hover {
-	background-color: var(--color-background);
+	background-color: transparent;
 	color: var(--color-button);
 	border: 2px solid var(--color-button);
 }
@@ -878,11 +884,13 @@ header hr {
 	width: 20px;
 	height: 20px;
 }
+.products-us .wrapper {
+	padding: 5em 0px;
+}
 .product-item {
-	display: grid;
-	width: 100%;
-	grid-template-columns: 40% 60%;
-	grid-template-rows: repeat(2, 100%);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 .product-item h3 {
 	font-size: 40px;
@@ -910,6 +918,8 @@ header hr {
 	color: var(--color-background);
 	border-radius: 60px;
 	font-size: 16px;
+	border: 2px solid var(--color-button);
+	transition: all 0.2s ease-in-out;
 }
 .product-item .gotoweb a svg {
 	height: 20px;
@@ -917,21 +927,36 @@ header hr {
 	margin-right: 5px;
 	margin-bottom: -3px;
 }
-.product-item .product-thumb {
+.product-item .gotoweb a:hover,
+.product-item .gotoweb a:hover svg path {
+	border: 2px solid var(--color-button);
+	color: var(--color-font);
+	background-color: transparent;
+	fill: var(--color-font);
+	transition: all 0.2s ease-in-out;
+}
+
+.product-item .product-thumb img {
+	width: 600px;
+	height: 100%;
+}
+
+.footer-button {
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
-.product-item .product-thumb .thumb-group {
-	width: 100%;
-	transform: translate(120px, 230px);
+.footer-button .btn-showmore a {
+	padding: 10px 20px;
+	border: 2px solid var(--color-button);
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	background-color: transparent;
 }
-.product-item .product-thumb .thumb-group .pct-logo {
-	transform: translate(106px, -20px);
-	height: 40px;
-}
-.product-item .product-thumb .thumb-group .pct-02 {
-	height: 250px;
-}
-.product-item .product-thumb .pct-01 {
-	height: 500px;
+
+.footer-button .btn-showmore a:hover {
+	background-color: var(--color-button);
+	color: var(--color-background);
 }
